@@ -1,4 +1,4 @@
-# Une première page web acec Bottle
+# Une première page web avec Bottle
 
 Bottle est un module de Python qui permet de réaliser des sites web ou applications web dynamiques. Contrairement à un site statique 
 qui permet des échanges limités entre le serveur et votre navigateur internet (le navigateur se contente d'envoyer des requêtes 
@@ -23,12 +23,13 @@ Voici un exemple de code basique pour présenter le principe général de Bottle
 		
     app.run(host='localhost', port=27200, reload=True, debug=True)
    
-Quelques explications: - ligne 1: On indique l'encodage uft-8 qui permet l´affichage des accents (inutile en python3). - ligne 2: On 
-importe bottle. - ligne 3: On crée une application bottle, ce n'est pas indispensable mais c'est plus propre ainsi. - ligne 4: On crée 
-une route (un chemin) indiquant la localisation de notre page internet: /index - ligne 5: On définit une fonction qui correspond à 
-notre page; le nom de la fonction a peu d'importance. Dans cet exemple simplifié, le bloc d'instruction de notre fonction ne contient 
-rien. - ligne 6: Le "return" renvoie une chaîne de caractères. - ligne 7: On lance le serveur sur l'adresse locale: 
-http://localhost:27200 ; notre page sera accessible à l'adresse suivante: [http://localhost:27200/index](http://localhost:27200/index)
+Quelques explications: 
+- ligne 1: On indique l'encodage uft-8 qui permet l´affichage des accents (inutile en python3). 
+- ligne 2: On importe bottle. 
+- ligne 3: On crée une application bottle, ce n'est pas indispensable mais c'est plus propre ainsi. 
+- ligne 4: On crée une route (un chemin) indiquant la localisation de notre page internet: /index - ligne 5: On définit une fonction qui correspond à notre page; le nom de la fonction a peu d'importance. Dans cet exemple simplifié, le bloc d'instruction de notre fonction ne contient rien. 
+- ligne 6: Le "return" renvoie une chaîne de caractères. 
+- ligne 7: On lance le serveur sur l'adresse locale: http://localhost:27200 ; notre page sera accessible à l'adresse suivante: [http://localhost:27200/index](http://localhost:27200/index)
   
 ## Une même page accessible depuis différentes routes
 

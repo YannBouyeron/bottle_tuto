@@ -8,11 +8,12 @@ d'informations plus important, notamment en permettant l'envoi d'informations du
 de ces informations, et la genèse d'une page internet adaptée aux requêtes de l'utilisateur.
 ## Importer Bottle
 Comme tout module, Bottle peut s'importer de différentes manières, il est toutefois conseillé de l'importer de la façon suivante:
+
     from bottle import *
    
 ## Une route, une page
 Voici un exemple de code basique pour présenter le principe général de Bottle:
-    # coding: utf-8
+
     from bottle import *
     app = Bottle()
     
@@ -30,7 +31,7 @@ rien. - ligne 6: Le "return" renvoie une chaîne de caractères. - ligne 7: On l
 http://localhost:27200 ; notre page sera accessible à l'adresse suivante: [http://localhost:27200/index](http://localhost:27200/index)
   
 ## Une même page accessible depuis différentes routes
-    # coding: utf-8
+
     from bottle import *
     app = Bottle()
                                       

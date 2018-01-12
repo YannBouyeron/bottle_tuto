@@ -2,7 +2,7 @@
 ### Lien HTML statique / CSS.
 Vous savez déjà lier un fichier CSS à une page HTML statistique; on ajoute la balise `<link rel="stylesheet" href="style.css" />` 
 entre les balises `<head>` et `</head>` Le fichier HTML (nommé index.html):
-    <!doctype html>
+    	<!doctype html>
     <html>
     
 	<head>
@@ -22,8 +22,10 @@ dossiers et fichiers:
     – dossier mon_site
          – fichier index.html
          – fichier style.css
+	 
 ### Lien HTML / CSS avec bottle.
 Le fichier HTML (index.html):
+
     <!doctype html>
     <html>
 	<head>
@@ -40,7 +42,6 @@ Le fichier HTML (index.html):
     </html>
   
 Le fichier Python (site.py) :
-    # coding: utf-8
     
     from bottle import*
 	
@@ -64,4 +65,5 @@ L'arborescence des dossiers et fichiers:
            – fichier index.html
        – dossier static
            – fichier style.css
+	   
 C'est un peu complexe,  mais il suffit d'écrire une fois la route `@route('/static/<filepath:path>')` dans votre script Python, et de bien respecter l'exemple de balise link `<link rel="stylesheet" href="./static/style.css" type="text/css" />` dans vos pages HTML 

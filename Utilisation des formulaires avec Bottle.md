@@ -1,4 +1,4 @@
-Utilisation des formulaires avec Bottle
+# Utilisation des formulaires avec Bottle
 
 
 Un formulaire permet à l'utilisateur (le navigateur internet) d'envoyer des informations à l'application web (le serveur).

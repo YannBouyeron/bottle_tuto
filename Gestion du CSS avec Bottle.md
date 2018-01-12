@@ -1,8 +1,11 @@
 # Gestion du CSS avec bottle.
 ### Lien HTML statique / CSS.
-Vous savez déjà lier un fichier CSS à une page HTML statistique; on ajoute la balise `<link rel="stylesheet" href="style.css" />` 
-entre les balises `<head>` et `</head>` Le fichier HTML (nommé index.html):
-    	<!doctype html>
+Vous savez déjà lier un fichier CSS à une page HTML statistique; on ajoute la balise `<link rel="stylesheet" href="style.css" />` entre les balises `<head>` et `</head>` .
+
+Le fichier HTML (nommé index.html):
+
+
+    <!doctype html>
     <html>
     
 	<head>

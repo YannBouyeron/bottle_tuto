@@ -20,8 +20,8 @@ Le fichier HTML (nommé index.html):
 	</body>
     </html>
   
-Le fichier CSS lié à cette page HTML est nommé "style.css" et se trouve dans le même dossier que la page HTML L'arborescence des 
-dossiers et fichiers:
+Le fichier CSS lié à cette page HTML est nommé "style.css" et se trouve dans le même dossier que la page HTML L'arborescence des dossiers et fichiers:
+    
     – dossier mon_site
          – fichier index.html
          – fichier style.css
@@ -62,6 +62,7 @@ Le fichier Python (site.py) :
     run()
    
 L'arborescence des dossiers et fichiers:
+
     – dossier mon_site
        – fichier site.py
        – dossier view

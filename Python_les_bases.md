@@ -1,13 +1,3 @@
-
-</br>
-#####<p style="color:;text-align:center;font-size:4em;">Tutoriel Python</p>
-</br></br></br></br></br></br></br></br></br></br></br></br></br></br><p style="color:;text-align:center;font-size:2em;">Partie 1: Les bases</p></br></br></br></br></br></br>
- 
-<p style="color:;text-align:center;font-size:2em;">Informatique et Créations Numériques</p>
-
-<p style="color:;text-align:center;font-size:px;">Cours Sainte Marie de Hann </p>
-</br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br>
-
 Copyright (c)  Yann Bouyeron.</br>
 Permission is granted to copy, distribute and/or modify this document under the terms of the GNU Free Documentation License, Version 1.3 or any later version published by the Free Software Foundation; with no Invariant Sections, no Front-Cover Texts, and no Back-Cover Texts.
 A copy of the license is included in the section entitled "GNU Free Documentation License".
@@ -23,7 +13,7 @@ Après avoir créé une variable, vous pouvez appeler cette variable dans le She
     5
 
 
-#Les différents types de variables
+# Les différents types de variables
 
 Différents types de contenus peuvent être attribués à une variable:
 
@@ -44,7 +34,7 @@ Le type int : ce sont des nombres entiers relatifs.
 Le type float : ce sont des nombres réels (avec un point représentant la virgule).  
 Le type str : ce sont des chaînes de caractères , qui doivent être écrites entre guillemets
 
-#Modifier une variable.
+# Modifier une variable.
 
 Comme son nom l'indique, une variable peut varier !
 
@@ -55,7 +45,7 @@ Comme son nom l'indique, une variable peut varier !
     >>> var
     34
 
-###Les opérations sur les variables de types int ou float
+### Les opérations sur les variables de types int ou float
 
 Il est possible d'effectuer des opérations avec les entiers de type int et les réels de type float:
 
@@ -91,7 +81,7 @@ Le résultat d'une opération peut être affecté à une variable :
 	>>> a
 	15
 
-###Assembler des chaînes de caractères.   
+### Assembler des chaînes de caractères.   
 
 La méthode "bricolage"
 
@@ -110,7 +100,7 @@ La méthode "pro"
 	>>> phrase
 	'Bonjour Robert, vous avez 32 ans'
 
-###Modifier le type d'une variable.   
+### Modifier le type d'une variable.   
 
 	>>> a = 5
 	>>> type (a)
@@ -128,11 +118,10 @@ La méthode "pro"
 	>>> d
 	5
 
-</br>
 
-#II L'éditeur , les entrées , et les sorties.
+# II L'éditeur , les entrées , et les sorties.
 
-###L'éditeur. 
+### L'éditeur. 
 
 Vous avez jusqu'à présent utilisé Python en mode Shell. Ce mode est très pratique pour écrire et interpréter "à la volée" des lignes de codes ; ce qui est idéal pour tester rapidement quelques lignes de codes.   
 
@@ -147,7 +136,7 @@ Pour interpréter votre code, cliquez sur F5; après avoir attribué un nom à v
 
 Pour ré ouvrir un algorithme déjà enregistré, allez dans "File", puis "open", et recherchez le nom de votre algorithme.
 
-###Les entrées.   
+### Les entrées.   
 
 Votre algorithme peut interagir avec l'utilisateur, en lui demandant d'entrer des informations que vous attribuerez à des variables.
 
@@ -163,7 +152,7 @@ En Python3, la fonction input permet d’entrer des int, float, ou str qui seron
 - Utiliser la fonction `input` pour demander à l'utilisateur d'entrer un nombre de type int ou float. 
 - Utiliser la fonction `raw_input` pour demander à l'utilisateur d'entrer une chaîne de caractères de type str.  
 
-###Les sorties.   
+### Les sorties.   
 
 Vous pouvez en retour, envoyer des informations à l'utilisateur. Pour cela , utilisez la fonction `print`
 
@@ -176,9 +165,9 @@ Vous pouvez en retour, envoyer des informations à l'utilisateur. Pour cela , ut
 
 ⚠️ Les parenthèses du print sont facultatives avec Python 2 mais obligatoires avec Python 3
 
-#III Les booléens et la structure conditionnelle if.
+# III Les booléens et la structure conditionnelle if.
 
-###Les booléens.  
+### Les booléens.  
 
 Un booléen est un type de variable à deux états. Les variables de ce type sont ainsi soit à l'état vrai (True) soit à l'état faux (False).
 Les booléens permettent de faire des comparaisons:
@@ -225,7 +214,7 @@ Les booléens permettent de faire des comparaisons:
 
 ⚠️ Attention:  ne pas confondre l'affectation `a = 4` et la comparaison `a == 4` !!!
 
-###La structure conditionnelle `if`
+### La structure conditionnelle `if`
 
 #### Exemple 1:
 
@@ -246,7 +235,7 @@ Sinon (autrement dit si l'âge est inférieur à 18) ce sont les instructions du
 
 ⚠️ Attention à bien respecter l'indentation (décalage) des instructions de chaque bloc !
 
-####Exemple 2:
+#### Exemple 2:
 
 	age = input('Entrez votre age: ')
 	age = int(age)
@@ -282,7 +271,7 @@ Il est possible d'utiliser `if` sans `elif` ou sans `else` , de même qu'il est 
 	
 		print('Vous êtes mineur')
 
-###Les connecteurs logiques `and` et `or`.  
+### Les connecteurs logiques `and` et `or`.  
 
 	age = input('Entrez votre age: ')
 	genre = input('Entrez votre genre (H ou F): ')
@@ -336,13 +325,13 @@ L'algorithme ci dessous est identique au précédant sauf qu'il n'utilise pas de
 	
 			print ('Vous êtes une femme mineure')
 
-#IV La boucle "while".  
+# IV La boucle "while".  
 
 En anglais "while" signifie "tant que".
 
 Cette fonction de python permet de créer des boucles: Tant que (while) la condition booléenne est vérifiée alors les instructions du bloc d'instructions sont réalisées.   
 
-####Exemple 1:
+#### Exemple 1:
 
     n = int(input('Entrez un nombre supérieur à 100: '))
     
@@ -370,7 +359,7 @@ L'algorithme va ensuite revérifier la condition booléenne `n < 100` , et tant 
 Lorsque l'utilisateur entrera un nombre supérieur à 100, la condition booléenne `n < 100` ne serra plus vérifiée et le bloc d'instruction de la boucle while ne serra pas exécuté. L'algorithme se poursuivra et se terminera en exécutant le `print ("""C'est bien, vous avez respecté la consigne.""")` qui est situé hors du bloc d'instruction de la boucle `while`
 
 
-####Exemple 2:  
+#### Exemple 2:  
 
     nombre_de_chances_max = 100
     
@@ -397,11 +386,11 @@ Lorsque l'utilisateur entrera un nombre supérieur à 100, la condition booléen
 			break
  
 
-#V Les listes.  
+# V Les listes.  
 
-###Créer une liste:  
+### Créer une liste:  
 
-#####En utilisant des crochets:
+##### En utilisant des crochets:
 
     >>> z =[1,2,3,4]
     >>> z
@@ -409,7 +398,7 @@ Lorsque l'utilisateur entrera un nombre supérieur à 100, la condition booléen
     >>> type(z)
     <type 'list'>
 
-#####En utilisant la fonction list():   
+##### En utilisant la fonction list():   
 
 
     >>> u = list('1234')
@@ -420,7 +409,7 @@ Lorsque l'utilisateur entrera un nombre supérieur à 100, la condition booléen
   
   
   
-#####En utilisant la fonction range():  
+##### En utilisant la fonction range():  
 
 En Python3:
 
@@ -441,7 +430,7 @@ En Python2.7:
     <type 'list'>
  
  
-#####Les listes peuvent contenir des entiers, des réels, et des chaînes de caractères 
+##### Les listes peuvent contenir des entiers, des réels, et des chaînes de caractères 
 
     >>> fruits = ['pomme', 'poire', 'fraise', 'orange']
     >>> 
@@ -449,7 +438,7 @@ En Python2.7:
    
    
    
-###Obtenir des informations sur une liste:
+### Obtenir des informations sur une liste:
 
 Création d'une liste nommée "maliste":
    
@@ -484,7 +473,7 @@ La fonction sum() indique la somme des éléments de la liste:
 	>>> sum(maliste)
 	15
 
-###Ajouter des éléments à une liste:
+### Ajouter des éléments à une liste:
 
     >>> a = [1,2,3,4]
     >>> a + [1]
@@ -499,14 +488,14 @@ La fonction sum() indique la somme des éléments de la liste:
    
 
 
-###Modifier un élément:
+### Modifier un élément:
 
     >>> a = [1,2,3,4]
     >>> a[1] = 333
     >>> a
     [1, 333, 3, 4]
 
-###Inserer un élément:
+### Inserer un élément:
 
     >>> a = [1,2,3,4]
     >>> a.insert(1,5555)
@@ -514,7 +503,7 @@ La fonction sum() indique la somme des éléments de la liste:
     [1, 5555, 2, 3, 4]
   
 
-###Ranger ...
+### Ranger ...
 
 Dans l'ordre croissant:
 
@@ -539,7 +528,7 @@ Inverser l'ordre:
     [3, 4, 1, 2]
   
   
-###Supprimer un élément:
+### Supprimer un élément:
 
     >>> a = [1,2,3,4]
     >>> a.remove(3)
@@ -547,7 +536,7 @@ Inverser l'ordre:
     [1, 2, 4]
    
    
-###Parcourir une liste: la boucle "for":
+### Parcourir une liste: la boucle "for":
 
 Pour tous les éléments (appelés ici "i") de la liste a , on affiche chaque élément i multiplié par 2	
 
@@ -575,7 +564,7 @@ La liste b est une liste vide. Pour tous les éléments i de la liste a , on aff
 
 
 
-###Enumerer une liste
+### Enumerer une liste
 
 La fonction enumerate() permet de parcourir une liste et d'obtenir l'index (position de l'élément dans la liste) et la valeur de chaque élément.
 
@@ -591,14 +580,14 @@ La fonction enumerate() permet de parcourir une liste et d'obtenir l'index (posi
 
 ⚠️ Vous remarquerez que Python commence toujours à compter à partir de 0 (le premier élément d’une liste est l’élément d’index 0)
 
-###Obtenir l'index d'un élément à partir de sa valeur:
+### Obtenir l'index d'un élément à partir de sa valeur:
 
 	>>> fruits
 	['pomme', 'poire', 'fraise', 'orange']
 	>>> fruits.index('poire')
 	1
 
-###Convertir une chaîne de caractères en liste de mots:
+### Convertir une chaîne de caractères en liste de mots:
 
 	>>> s = 'bonjour comment ca va ?'
 	>>> p = s.split(' ')
@@ -606,7 +595,7 @@ La fonction enumerate() permet de parcourir une liste et d'obtenir l'index (posi
 	['bonjour', 'comment', 'ca', 'va', '?']
 
 
-###Convertir une liste de mots en une chaîne de caractères:
+### Convertir une liste de mots en une chaîne de caractères:
 
 	>>> p
 	['bonjour', 'comment', 'ca', 'va', '?']
@@ -615,7 +604,7 @@ La fonction enumerate() permet de parcourir une liste et d'obtenir l'index (posi
 	'bonjour comment ca va ?'
 
 
-###Sectionner une liste:
+### Sectionner une liste:
 
 	>>> p
 	['bonjour', 'comment', 'ca', 'va', '?']
@@ -632,7 +621,7 @@ La fonction enumerate() permet de parcourir une liste et d'obtenir l'index (posi
 	>>> p[:1]
 	['bonjour']
 
-###Choisir un élément au hasard dans une liste
+### Choisir un élément au hasard dans une liste
 
 Il faut pour cela importer le module random:
 
@@ -672,7 +661,7 @@ On peut aussi utiliser la fonction random.randint():
 
 L'algorithme ci dessus choisit au hasard un nombre compris entre 0 et 20
 
-###Revenir au début d'une liste lorsque l'index sort de la liste
+### Revenir au début d'une liste lorsque l'index sort de la liste
 
 	>>> x = ['peche','pomme','poire','abricot']
 	>>> y = len(x)
@@ -689,13 +678,13 @@ L'algorithme ci dessus choisit au hasard un nombre compris entre 0 et 20
 	
 
 
-###Les index négatifs 
+### Les index négatifs 
 	>>> x[-1]
 	'abricot'
 	>>> x[-1] == x[y-1]
 	True
 
-#VI Les dictionnaires.
+# VI Les dictionnaires.
 
 Les dictionnaires sont des objets qui associent des clés à des valeurs. Les clés et les valeurs peuvent être des chaînes de caractères (str), des entiers (int), des réels (float), des listes (list) ou des tuples (tuple) ou des listes de tuples...
 
@@ -704,7 +693,7 @@ Les dictionnaires sont des objets qui associent des clés à des valeurs. Les cl
 	{'clé2': 'valeur2', 'clé3': 'valeur3', 'clé1': 'valeur1'}
 
 
-###Créer un dictionnaire.
+### Créer un dictionnaire.
 
 Il existe plusieurs manières de créer un dictionnaire:
 
@@ -721,13 +710,13 @@ Il existe plusieurs manières de créer un dictionnaire:
 	{1: 'un', 2: 'deux', 3: 'trois'}
 
 
-###Appeler une valeur correspondant à une clé 
+### Appeler une valeur correspondant à une clé 
 
 	>>> d['fruit1']
 	'pomme'
 
 
-###Ajouter un couple clé/valeur.
+### Ajouter un couple clé/valeur.
 
 	>>> d
 	{'fruit1': 'pomme', 'fruit3': 'poire', 'fruit4': 'orange'}
@@ -737,13 +726,13 @@ Il existe plusieurs manières de créer un dictionnaire:
 	>>> d
 	{'fruit1': 'pomme', 'fruit2': 'citron', 'fruit3': 'poire', 'fruit4': 'orange'}
 
-###Modifier une valeur.
+### Modifier une valeur.
 
 	>>> d['fruit1']= 'banane'
 	>>> d
 	{'fruit1': 'banane', 'fruit2': 'citron', 'fruit3': 'poire', 'fruit4': 'orange'}
 
-###Supprimer un couple clé/valeur.
+### Supprimer un couple clé/valeur.
 
 	>>> d
 	{'fruit3': 'poire', 'fruit2': 'citron', 'fruit1': 'banane', 'fruit4': 'orange'}
@@ -754,17 +743,17 @@ Il existe plusieurs manières de créer un dictionnaire:
 	{'fruit3': 'poire', 'fruit2': 'citron', 'fruit1': 'banane'}
 
 
-###Afficher toutes les clés d'un dictionnaire.
+### Afficher toutes les clés d'un dictionnaire.
 
 	>>> d.keys()
 	dict_keys(['fruit1', 'fruit2', 'fruit3'])
 
-###Afficher toutes les valeurs d'un dictionnaire.
+### Afficher toutes les valeurs d'un dictionnaire.
 
 	>>> d.values()
 	dict_values(['pomme', 'citron', 'poire'])
 
-###Parcourir un dictionnaire.
+### Parcourir un dictionnaire.
 
 Les deux méthodes ci-dessous sont équivalentes.
 
@@ -785,7 +774,7 @@ Les deux méthodes ci-dessous sont équivalentes.
 	fruit3 = poire
 	fruit4 = orange
 
-###Le module AttrDict
+### Le module AttrDict
 
 Ce module permet de faciliter l’utilisation d’un dictionnaire :
 
@@ -803,35 +792,35 @@ Autre exemple:
 	>>> attr.fruit.agrume
 	'orange'
 
-#VII Manipuler des chaînes de caractères.
+# VII Manipuler des chaînes de caractères.
 
-###Créer une chaîne:
+### Créer une chaîne:
 
 	>>> c = 'salut comment ca va'
 
-###Créer une chaîne qui contient des apostrophes:
+### Créer une chaîne qui contient des apostrophes:
 
 	>>> d = """salut l'ami"""
 	>>> d
 	"salut l'ami"
 
 
-###Afficher la longueur de la chaîne:
+### Afficher la longueur de la chaîne:
 
 	>>> len(c)
 	19
 
-###Afficher le caractère le plus "élevé" :
+### Afficher le caractère le plus "élevé" :
 
 	>>> max(c)
 	'v'
 
-###Afficher le caractère le plus "petit":
+### Afficher le caractère le plus "petit":
 
 	>>> min(c)
 	' '
 
-###Parcourir une chaîne avec une boucle for:
+### Parcourir une chaîne avec une boucle for:
 
 	>>> for v in c:
 	...   print v
@@ -856,7 +845,7 @@ Autre exemple:
 	v
 	a
 
-###Énumérer une chaîne :
+### Énumérer une chaîne :
 
 	>>> for i, v in enumerate(c):
 	...   print i, v
@@ -881,22 +870,22 @@ Autre exemple:
 	17 v
 	18 a
 
-###Retrouver la valeur d'un caractère en fonction de son index
+### Retrouver la valeur d'un caractère en fonction de son index
 
 	>>> c[2]
 	'l'
 
-###Retrouver l'index d'un caractère (si le caractère est présent plusieurs fois , seul son premier index serra affiché)
+### Retrouver l'index d'un caractère (si le caractère est présent plusieurs fois , seul son premier index serra affiché)
 
 	>>> c.index('t')
 	4
 
-###Ajouter une majuscule en début de phrase:
+### Ajouter une majuscule en début de phrase:
 
 	>>> c.capitalize()
 	'Salut comment ca va'
 
-###Tout mettre en majuscules:
+### Tout mettre en majuscules:
 
 	>>> c.upper()
 	'SALUT COMMENT CA VA'
@@ -904,7 +893,7 @@ Autre exemple:
 Utilisez la fonction `lower()` pour passer des majuscules aux minuscules
 
 
-###Remplacer ou supprimer des caractères :
+### Remplacer ou supprimer des caractères :
 
 	>>> c.replace('t','y')
 	'saluy commeny ca va'
@@ -915,13 +904,13 @@ Utilisez la fonction `lower()` pour passer des majuscules aux minuscules
 	>>> c.replace(' ','')
 	'salutcommentcava'
 
-###Supprimer des espaces en début et fin de chaine:
+### Supprimer des espaces en début et fin de chaine:
 
 	c = ' bonjour '
 	>>> c.strip()
 	'bonjour'
 
-###Sectionner une chaîne de caractères :
+### Sectionner une chaîne de caractères :
 
 	>>> c = 'salut comment ca va'
 
@@ -935,7 +924,7 @@ Utilisez la fonction `lower()` pour passer des majuscules aux minuscules
 	'va'
 
 
-###Convertir une chaîne de caractères en liste de mots:
+### Convertir une chaîne de caractères en liste de mots:
 
 	>>> s = 'bonjour comment ca va ?'
 	>>> p = s.split(' ')
@@ -943,7 +932,7 @@ Utilisez la fonction `lower()` pour passer des majuscules aux minuscules
 	['bonjour', 'comment', 'ca', 'va', '?']
 
 
-###Convertir une liste de mots en une chaîne de caractères:
+### Convertir une liste de mots en une chaîne de caractères:
 
 	>>> p
 	['bonjour', 'comment', 'ca', 'va', '?']

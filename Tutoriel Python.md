@@ -102,6 +102,14 @@ La méthode "pro"
 	>>> phrase
 	'Bonjour Robert, vous avez 32 ans'
 
+En python >= 3.6
+
+	>>> nom = "Robert"
+	>>> age = 32
+	>>> phrase = f"Bonjour {nom}, vous avez {age} ans"
+	>>> phrase
+	'Bonjour Robert, vous avez 32 ans'
+
 ### Modifier le type d'une variable.   
 
 	>>> a = 5

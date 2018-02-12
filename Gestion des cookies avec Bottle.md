@@ -1,4 +1,4 @@
-# Géstion des cookies avec Bottle
+# Gestion des cookies avec Bottle
 
 Les cookies permettent de stocker et de récupérer des informations directement dans et depuis le navigateur du client.
 

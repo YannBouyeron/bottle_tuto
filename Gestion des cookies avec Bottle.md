@@ -16,6 +16,7 @@ Les cookies permettent de stocker et de récupérer des informations directement
 	x = request.get_cookie("account", secret='hgcghgfygfytfftyf')
 
 Si le cookie recherché n’est pas présent dans le navigateur du client, x serra égale à None.
+Si le cookie recherché est présent, le contenu du cookie serra affecté à la variable x.
 
 ### Supprimer un cookie:
 
@@ -41,7 +42,8 @@ On peut aussi utiliser max_age = 0 (expire dans 0 secondes)
 		if x:
 			
 			p = 'bonjour ' + str(x)
-			d = """<form action="/log_out" method="post"> <input type="submit" name="info" value="deconnection"/> </form>"""
+			d = """<form action="/log_out" method="post"> <input type="submit" name="info" value="deconnection"/> 
+			</form>"""
 		
 			return p , d
 			
@@ -73,7 +75,8 @@ On peut aussi utiliser max_age = 0 (expire dans 0 secondes)
 		else:
 			
 			t = 'mot de passe incorrecte'
-			b = """<form action="/" method="post"> <input type="submit" name="info" value="acceuil"/> </form>"""
+			b = """<form action="/" method="post"> <input type="submit" name="info" value="acceuil"/> 
+			</form>"""
 			
 			return t , b
 		
@@ -83,8 +86,7 @@ On peut aussi utiliser max_age = 0 (expire dans 0 secondes)
 	@app.post('/log_out')	
 	def deconect():
 	
-		response.set_cookie("account", '' ,
-		secret='hgcghgfygfytfftyf',expires=0)
+		response.set_cookie("account", '' , secret='hgcghgfygfytfftyf',expires=0)
 	
 		response.status = 303
 		response.set_header('Location', '/')
